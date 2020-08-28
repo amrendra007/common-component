@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import '@contentstack/venus-components/build/main.css'
+
+import AppRoutes from './routes'
+
+const App = () => {
+  return <AppRoutes />
 }
 
-export default App;
+export default App
+
+// import '@contentstack/venus-components'
+// import '@contentstack/venus-components/build/main.css';
+
+// export const Default = () => {
+//   const [tags, setTags] = useState(['Summer', 'season', 'winter'])
+
+//   const handleTagUpdate = tags => {
+//     setTags(tags)
+//     console.log('updated tags', tags)
+//   }
+//   return <TagEditor label="Tags" tags={tags} updateTag={handleTagUpdate} />
+// }
+
+// const AppTest = () => {
+//   return (
+//     <div>
+//       <Button buttonType="primary">
+//         <span>Button test</span>
+//       </Button>
+//       <br/>
+//       {/* <Default/> */}
+//       <CoulmnSelector/>
+//     </div>
+//   )
+// }
